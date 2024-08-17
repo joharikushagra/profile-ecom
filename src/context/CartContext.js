@@ -8,7 +8,6 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [productList, setProductList] = useState(products);
   const [cart, setCart] = useState([]);
-  console.log({cart})
 
   // Load cart from localStorage on initial render
   useEffect(() => {
