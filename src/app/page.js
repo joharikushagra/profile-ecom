@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(()=>{},[productList]);
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 p-2 md:grid-cols-3 gap-8">
         {productList.map((product, i) => (
           <ProductCard key={i} product={product} addToCart={addToCart} />
         ))}
