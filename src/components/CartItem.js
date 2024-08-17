@@ -13,7 +13,7 @@ const CartItem = ({ item, updateQuantity, removeItem }) => {
         <span className="mx-2">{item.quantity}</span>
         <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
       </div>
-      <p className="text-gray-700 px-2">${(calcPrice(item) * item.quantity).toFixed(2)}</p>
+      <p className="font-bold px-2">${(calcPrice(item) * item.quantity).toFixed(2)}</p>
       <button onClick={() => removeItem(item.id)} className="text-red-500"><FaRegTrashAlt/></button>
     </div>
   );
