@@ -11,8 +11,8 @@ export const CartProvider = ({ children }) => {
 
   // Load cart from localStorage on initial render
   useEffect(() => {
+    window.localStorage.clear()
     const storedCart = localStorage.getItem('cart');
-    localStorage.clear()
     if (storedCart) {
       setCart(JSON.parse(storedCart));
     }
