@@ -39,7 +39,7 @@ const ProductCard = ({ product, addToCart }) => {
         </button>
         {product.addtocart && <Link href={'/cart'}>
         <button
-          className={`mt-4 ml-2 border-2 border-rose-100 text-red-500 py-2 px-4 rounded flex items-center cursor-pointer hover:scale-105`}
+          className={`mt-4 ml-2 border border-red-500 text-red-500 py-2 px-4 rounded flex items-center cursor-pointer hover:scale-105`}
           >
           Go to <CiShoppingBasket className='ml-1 text-xl'/>
         </button>

@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex items-center p-2 cursor-pointer hover:scale-105">
           {pathname === '/' && (
             <Link href="/cart" className="flex text-md items-center">
-              Go to Cart  &nbsp;<span className='bg-violet-700 flex justify-center items-center h-[25px] w-[25px] rounded-[50%]'>{totalItems}</span>
+              Go to Cart  &nbsp;<span className={`bg-violet-700 flex justify-center items-center h-[25px] w-[25px] rounded-[50%] ${totalItems && 'animate-bounce'}`}>{totalItems}</span>
             </Link>
           )}
           {pathname === '/cart' && (
