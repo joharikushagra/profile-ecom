@@ -32,7 +32,7 @@ const ProductCard = ({ product, addToCart }) => {
       <div className='flex items-center'>
         <button
           onClick={updateList}
-          className={`mt-4 ${product.addtocart ? 'bg-white border border-green-500 text-green-700' : 'bg-blue-500' } text-white py-2 px-4 rounded flex items-center cursor-pointer hover:scale-105`}
+          className={`mt-4 ${product.addtocart ? 'bg-green-500' : 'bg-blue-500' } text-white py-2 px-4 rounded flex items-center cursor-pointer hover:scale-105`}
           disabled={product.addtocart}
         >
           Add to {iconToggle(product)}

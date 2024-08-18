@@ -12,7 +12,7 @@ export const CartProvider = ({ children }) => {
   // Load cart from localStorage on initial render
   useEffect(() => {
     const storedCart = localStorage.getItem('cart');
-    localStorage.removeItem('cart')
+    localStorage.clear()
     if (storedCart) {
       setCart(JSON.parse(storedCart));
     }
